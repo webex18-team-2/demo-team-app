@@ -3,13 +3,13 @@
   <div class="memo-list">
     <ul class="memo-list__container">
       <li v-for="(memo, index) in memos" v-bind:key="index" class="memo">
-        <div class="memo_checkbox">
+        <div class="memo__checkbox">
           <input type="checkbox" v-model="memo.isDone" />
         </div>
-        <div v-if="memo.isDone" class="memo_text memo_text--done">
+        <div v-if="memo.isDone" class="memo__text memo_text--done">
           {{ index }}:{{ memo.text }}
         </div>
-        <div v-else class="memo_text">{{ index }}:{{ memo.text }}</div>
+        <div v-else class="memo__text">{{ index }}:{{ memo.text }}</div>
         <button v-on:click="deleteMemo(index)" class="memo_delete">削除</button>
       </li>
     </ul>
