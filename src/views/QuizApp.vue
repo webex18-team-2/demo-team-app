@@ -1,22 +1,16 @@
 <template>
   <h1>Vue クイズ</h1>
   <div class="app">
-    <h2>Q. {{ "大三元.inc-名前由来" }}</h2>
+    <h2>Q. 大三元.inc-名前由来</h2>
     <img
       class="quiz-image"
       src="https://img.ponparemall.net/imgmgr/37/00104837/kanji/tkanjiold_01/daisangen-tate.jpg?ver=1&size=pict650_650"
       alt="クイズタイトル"
     />
     <div class="container">
-      <button v-on:click="answer1">
-        {{ "中国の食べ物" }}
-      </button>
-      <button v-on:click="answer2">
-        {{ "麻雀" }}
-      </button>
-      <button v-on:click="answer3">
-        {{ "chatGPT命名" }}
-      </button>
+      <button v-on:click="answer1">中国の食べ物</button>
+      <button v-on:click="answer2">麻雀</button>
+      <button v-on:click="answer3">chatGPT命名</button>
     </div>
     <div>{{ answer }}</div>
   </div>
