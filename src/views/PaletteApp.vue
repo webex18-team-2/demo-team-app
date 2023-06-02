@@ -16,7 +16,7 @@
       class="mini-palette"
       v-for="(color, index) in colors"
       v-bind:style="{
-        backgroundColor: `rgba(${color.red},${color.green}, 200, 0.5,)`,
+        backgroundColor: `rgba(${color.red},${color.green}, 200, 0.5)`,
       }"
       :key="index"
       @click="showColor(color)"
