@@ -10,17 +10,17 @@
     ></div>
     <p>rgba( {{ red }}, {{ green }}, 200, 0.5 )</p>
 
-    <div class="colors-container"></div>
-    <div class="mini-palette"></div>
-    <div
-      class="mini-palette"
-      v-for="(color, index) in colors"
-      v-bind:style="{
-        backgroundColor: `rgba(${color.red},${color.green}, 200, 0.5)`,
-      }"
-      :key="index"
-      @click="showColor(color)"
-    ></div>
+    <div class="colors-container">
+      <div
+        class="mini-palette"
+        v-for="(color, index) in colors"
+        v-bind:style="{
+          backgroundColor: `rgba(${color.red},${color.green}, 200, 0.5)`,
+        }"
+        :key="index"
+        @click="showColor(color)"
+      ></div>
+    </div>
   </div>
 </template>
 
